@@ -1,21 +1,20 @@
-# Practical Application III: Comparing Classifiers
+# Classifier Comparisons
 <b color="red">NOTE: All images are clickable and higher resolution images will load in new browser window</b>
 ## Background
-We are trying to analyze the results of a Portugese Bank marketing campaign conducted over phone.
- The goal of the campaign was to get a customer to sign up for a term deposit.
-The dataset collected is related to 17 campaigns that occurred between May 2008 and November 2010, corresponding to a total of 79354 contacts
+We're analyzing data from a Portuguese bank's phone marketing campaign aimed at getting customers to sign up for term deposits. The dataset includes 79,354 contacts from 17 campaigns between May 2008 and November 2010.
 
-We will follow the CRISP-DM process model consisting of Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation, Deployment stages.
+We will follow the CRISP-DM process: Business Understanding, Data Understanding, Preparation, Modeling, Evaluation, and Deployment.
+
 ## Research Code
 **Code:** [Data Analysis Workbook](./prompt_III.out.ipynb)
 
-**NOTE:** *The processing of the juypter notebook take a long time and often disconnects from the session. In order to run it without monitoring it all the time use the wokraround below from command line.*
+**NOTE:** *The processing of the Jupyter notebook takes a long time and often disconnects from the session. In order to run it without monitoring it all the time use the wokraround below from command line.*
 ```
 jupyter nbconvert --to notebook --execute {input_notebook} --output={output_notebook} --ExecutePreprocessor.timeout=-1
 ```
 <sub>Source: [screen-and-jupyter-a-way-to-run-long-notebooks-headles](https://www.maksimeren.com/post/screen-and-jupyter-a-way-to-run-long-notebooks-headless/)</sub>
 
-Jump to the good stuff: [Summary, Observations and Guidance](#next-steps-summary-observations-and-guidance)
+Jump to: [Summary, Observations and Guidance](#next-steps-summary-observations-and-guidance)
 ## CRISP DM: Data Understanding
 ### Data Shape
 The data has the following information
@@ -82,7 +81,7 @@ Output variable (desired target):
 
 ```
 #### Analysis
-Data has no missing values so we will examine content as based on the infromation it seems like empty values have been substituted
+Data has no missing values so we will examine content as based on the information it seems like empty values have been substituted
 #### Data Distributions
 <a href="./analysis_results/module_17_01.step03.data_understanding.categorical.data.distribution.png" target="_blank"><img src="./analysis_results/module_17_01.step03.data_understanding.categorical.data.distribution.png"/></a>
 
@@ -100,9 +99,11 @@ Data has no missing values so we will examine content as based on the infromatio
 ## CRISP DM: Business Understanding
 ### Business Objective
 Our goal is to:
-- First find a model that best predicts whether a user will sign up for a long term deposit after several contacts from a marketing campaign.
-- Second use the model to explain what features contribute most significantly to the outcome of user signing up for a deposit.
-- Lastly use this information to offer guidance to the bank on which customers to target based on features or approach so we can minimize resources, time and thus cost and maximize the desired result.
+
+* Identify the best model to predict if a customer will sign up for a long-term deposit after multiple campaign contacts.
+* Use the model to highlight key features influencing this outcome.
+* Provide actionable insights to help the bank target the right customers more efficiently, reducing cost and effort while maximizing results.
+
 ## CRISP DM: Data Preparations
 ### Feature Engineering Decisions
 We are asked to focus on just the "bank client data" features. In order to simplify later steps though we will also make some decisions around the "other attributes" and "social and economic context attributes" features to be efficent in our data preparation.
