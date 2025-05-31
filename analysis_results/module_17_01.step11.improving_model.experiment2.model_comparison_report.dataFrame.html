@@ -1,0 +1,56 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>experiment</th>
+      <th>model</th>
+      <th>scoring_type</th>
+      <th>train score</th>
+      <th>test score</th>
+      <th>average fit time</th>
+      <th>grid_search_train_wall_time</th>
+      <th>best_params</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Improving Model - Grid Search</td>
+      <td>Logistic Regression</td>
+      <td>accuracy</td>
+      <td>0.901693</td>
+      <td>0.902711</td>
+      <td>0.023279</td>
+      <td>2.625720</td>
+      <td>{"C": 0.5, "penalty": "l2"}</td>
+    </tr>
+    <tr>
+      <td>Improving Model - Grid Search</td>
+      <td>Decision Tree</td>
+      <td>accuracy</td>
+      <td>0.915219</td>
+      <td>0.902537</td>
+      <td>0.033482</td>
+      <td>5.520002</td>
+      <td>{"criterion": "entropy", "max_depth": 8}</td>
+    </tr>
+    <tr>
+      <td>Improving Model - Grid Search</td>
+      <td>SVC</td>
+      <td>accuracy</td>
+      <td>0.920599</td>
+      <td>0.901229</td>
+      <td>4.007379</td>
+      <td>980.030772</td>
+      <td>{"C": 1.0, "kernel": "rbf"}</td>
+    </tr>
+    <tr>
+      <td>Improving Model - Grid Search</td>
+      <td>KNN</td>
+      <td>accuracy</td>
+      <td>1.000000</td>
+      <td>0.888763</td>
+      <td>0.009101</td>
+      <td>120.654340</td>
+      <td>{"n_neighbors": 12, "weights": "distance"}</td>
+    </tr>
+  </tbody>
+</table>

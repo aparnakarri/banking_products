@@ -1,0 +1,5 @@
+{
+    "command_line": "jupyter nbconvert --to notebook --execute prompt_III.template.ipynb --output=prompt_III.out.ipynb -ExecutePreprocessor.timeout=-1",
+    "modes": ["development", "production"],
+    "mode": "production"
+}
